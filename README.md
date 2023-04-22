@@ -103,7 +103,7 @@ To simplify development, we strongly recommend leveraging the Isaac ROS Dev Dock
 
     ```bash
     cd /workspaces/isaac_ros-dev/ && \
-        rosdep install -i -r --from-paths src --rosdistro humble -y --skip-keys "libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev python-opencv python3-opencv nvblox"
+        rosdep install -i -r --from-paths src --ignore-src --rosdistro humble -y --skip-keys "libopencv-dev libopencv-contrib-dev libopencv-imgproc-dev python-opencv python3-opencv"
     ```
 
 6. Build and source the workspace:  
